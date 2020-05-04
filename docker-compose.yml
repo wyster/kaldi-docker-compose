@@ -5,4 +5,10 @@ services:
     env_file:
       - .env
     ports:
-      - ${PORT}:2700
+      - ${PORT_RU}:2700
+  kaldi-en:
+    image: alphacep/kaldi-en:latest
+    env_file:
+      - .env
+    ports:
+      - ${PORT_EN}:2700
